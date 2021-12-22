@@ -33,6 +33,10 @@ let webTimers = {
 				if (timesRun >= 2) {
 					mainThis.el.text(formatted);
 				}
+
+				if (val.asSeconds() == 0) {
+					mainThis.stop();
+				}
 			}
 
 			function timestamp(timerEnd) {
