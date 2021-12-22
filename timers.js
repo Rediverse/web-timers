@@ -17,8 +17,6 @@ let webTimers = {
 
 			this.el.text(moment(moment.duration(this.timerEnd, 'X').asSeconds(), 's').format(this.format));
 
-			console.log(this.timerStart, this.timerEnd);
-
 			let timesRun = 0;
 
 			this.timerInterval = setInterval(() => {
