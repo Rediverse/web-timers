@@ -11,7 +11,7 @@ You just need to include this library, jQuery and Moment to your library.
 <!-- Include Moment -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <!-- Include Web Timers -->
-<script src="https://ghcdn.rawgit.org/Rediverse/web-timers/main/timers.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Rediverse/web-timers@main/timers.js"></script>
 <!-- Include your script -->
 <script src="script.js"></script>
 ```
