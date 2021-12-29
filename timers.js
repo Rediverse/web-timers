@@ -9,7 +9,7 @@ let webTimers = {
 			console.log(`[WEBTIMERS]: Timer initialized with format ${this.format}`);
 		}
 
-		async start(duration, unit) {
+		async start(duration, unit, callback) {
 			this.duration = duration;
 			this.unit = unit;
 			this.timerStart = moment().format('X');
@@ -34,6 +34,7 @@ let webTimers = {
 
 				if (val.asSeconds() == 0) {
 					mainThis.stop();
+					callback();
 				}
 			}
 
